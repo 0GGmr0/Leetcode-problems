@@ -81,3 +81,26 @@ public class Solution {
     }
 }
 
+
+
+//大佬的做法
+// public ListNode partition(ListNode head, int x) {
+//     ListNode rlt1 = new ListNode(0);
+//     ListNode pointer1 = rlt1;
+//     ListNode rlt2 = new ListNode(0);
+//     ListNode pointer2 = rlt2;
+//     while (head != null){
+//         if (head.val < x){
+//             rlt1.next = new ListNode(head.val);
+//             rlt1 = rlt1.next;
+//         }
+//         else {
+//             rlt2.next = new ListNode(head.val);
+//             rlt2 = rlt2.next;
+//         }
+//         head = head.next;
+//     }
+//     rlt1.next = pointer2.next;
+//     return pointer1.next;
+    
+// }
