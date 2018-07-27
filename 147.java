@@ -25,61 +25,10 @@ public class Solution {
         }
         return newHead;
     }
-//        //一开始就是偶数,找到第一个不是偶数的当做首位，然后开始遍历剩下的内容
-//        if(l.val % 2 == 0) {
-//            while(l != null && l.val % 2 == 0) {
-//                even = l;
-//                l = l.next;
-//            }
-//            if(l != null) {
-//                even.next = l.next;
-//                l.next = head;
-//                head = l;
-//                odd = head;
-//                l = even.next;
-//            }
-//        } else {
-//            //一开始就是奇数，找到第一个不是奇数的即可
-//            while(l != null && l.val % 2 == 1) {
-//                odd = l;
-//                l = l.next;
-//            }
-//            if(l != null) {
-//                even = l;
-//                l = l.next;
-//            }
-//        }
-//
-//        while(l != null) {
-//            ListNode node = l;
-//            l = l.next;
-//            if(node.val % 2 == 1) {
-//                even.next = l;
-//                node.next = odd.next;
-//                odd.next = node;
-//                odd = node;
-//            } else {
-//                even = node;
-//            }
-//        }
-//        return head;
-//    }
 
 
     public static void main(String[] args) {
 
-//        l.next = new ListNode(1);
-//        l = l.next;
-//        l.next = new ListNode(3);
-//        l = l.next;
-//        l.next = new ListNode(5);
-//        l = l.next;
-//        l.next = new ListNode(6);
-//        l = l.next;
-//        l.next = new ListNode(4);
-//        l = l.next;
-//        l.next = new ListNode(7);
-//        l = l.next;
         Scanner sc = new Scanner(System.in);
         while(true) {
             String s = sc.next();
